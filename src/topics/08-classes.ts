@@ -13,5 +13,16 @@ export class Person {
     ) {}
 }
 
-const valquiria = new Person('Valquiria', 'New York');
+export class Heroin extends Person {
+    constructor(
+        public alterEgo: string,
+        public age: number,
+        public realName: string
+    ) {
+        super(realName, 'New York');
+    }
+
+}
+
+const valquiria = new Heroin('Valquiria', 25, 'Brunilda');
 console.log(valquiria);
