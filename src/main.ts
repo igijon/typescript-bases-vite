@@ -1,5 +1,5 @@
 import './style.css';
-import './topics/04-objects-interfaces';
+import './topics/05-basic-destructuring';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
  Hola Mundo
