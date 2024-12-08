@@ -23,9 +23,9 @@ const audioPlayer: AudioPlayer = {
 }
 
 //Esto está regular
-console.log('Song: ', audioPlayer.song);
-console.log('Duration: ', audioPlayer.songDuration);
-console.log('Author:', audioPlayer.details.author);
+// console.log('Song: ', audioPlayer.song);
+// console.log('Duration: ', audioPlayer.songDuration);
+// console.log('Author:', audioPlayer.details.author);
 
 const song = 'New Song';
 
@@ -43,6 +43,12 @@ const {
 
 const { author } = details;
 
-console.log('Song: ', anotherSong);
-console.log('Duration: ', duration);
-console.log('Author:', author);
+// console.log('Song: ', anotherSong);
+// console.log('Duration: ', duration);
+// console.log('Author:', author);
+
+const dbz: string[] = ['Goku', 'Vegeta', 'Trunks']
+// const trunks = dbz[3] || 'No hay personaje';
+
+const [ , , trunks = 'Not found' ] = dbz;
+console.error('Personaje 3: ', trunks); // Puedo hacer esto cuando el valor no existe, es undefined
